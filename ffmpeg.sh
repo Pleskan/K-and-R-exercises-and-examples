@@ -101,7 +101,7 @@ git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
 PKG_CONFIG_PATH="/usr/ffmpeg_build/lib/pkgconfig"
 export PKG_CONFIG_PATH
-./configure --prefix="/usr/ffmpeg_build" --extra-cflags="-I/usr/ffmpeg_build/include" --extra-ldflags="-L/usr/ffmpeg_build/lib" --bindir="/usr/bin" --extra-libs="-ldl" --enable-gpl --enable-nonfree --enable-libfdk_aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libfreetype --enable-libspeex --enable-libtheora --enable-shared
+./configure --prefix="/usr" --extra-cflags="-I/usr/ffmpeg_build/include" --extra-ldflags="-L/usr/ffmpeg_build/lib" --bindir="/usr/bin" --libdir="/usr/lib" --shlibdir="/usr/lib" --extra-libs="-ldl" --enable-gpl --enable-nonfree --enable-libfdk_aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libfreetype --enable-libspeex --enable-libtheora --enable-shared
 make
 make install
 make distclean
